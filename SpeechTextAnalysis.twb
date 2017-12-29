@@ -1,0 +1,1409 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.0812.0001                               -->
+<workbook source-build='10.0.0 (10000.16.0812.0001)' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (political_speeches)' inline='true' name='federated.16lcmkf0r2owis16m3elx0yf7hon' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='political_speeches' name='excel-direct.0t5m17808oxskq13fnxjk1rt9rvb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:\Users\admin\Desktop\political_speeches.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0t5m17808oxskq13fnxjk1rt9rvb' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:O10001:no:A1:O10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Candidate' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='Filename' ordinal='2' />
+            <column datatype='string' name='next_Filename' ordinal='3' />
+            <column datatype='string' name='next_Word' ordinal='4' />
+            <column datatype='string' name='Party' ordinal='5' />
+            <column datatype='string' name='phrase' ordinal='6' />
+            <column datatype='integer' name='Position' ordinal='7' />
+            <column datatype='string' name='Word' ordinal='8' />
+            <column datatype='integer' name='Dot' ordinal='9' />
+            <column datatype='integer' name='next_Position' ordinal='10' />
+            <column datatype='integer' name='next_word_length' ordinal='11' />
+            <column datatype='integer' name='Number of Records' ordinal='12' />
+            <column datatype='integer' name='phrase_length' ordinal='13' />
+            <column datatype='integer' name='word_length' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Candidate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Candidate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Candidate</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Filename</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Filename]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Filename</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_Filename</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[next_Filename]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>next_Filename</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_Word</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[next_Word]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>next_Word</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Party</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Party]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Party</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phrase</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[phrase]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>phrase</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Position]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Position</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Word</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Word]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Word</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dot]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Dot</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[next_Position]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>next_Position</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_word_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[next_word_length]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>next_word_length</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phrase_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[phrase_length]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>phrase_length</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[word_length]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>word_length</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O10001:no:A1:O10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+      <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+      <column caption='next Filename' datatype='string' name='[next_Filename]' role='dimension' type='nominal' />
+      <column caption='next Position' datatype='integer' name='[next_Position]' role='measure' type='quantitative' />
+      <column caption='next Word' datatype='string' name='[next_Word]' role='dimension' type='nominal' />
+      <column caption='Next Word Length' datatype='integer' name='[next_word_length]' role='measure' type='quantitative' />
+      <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+      <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+      <column caption='Word Length' datatype='integer' name='[word_length]' role='measure' type='quantitative' />
+      <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.567288' measure-ordering='alphabetic' measure-percentage='0.432712' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Candidate:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Clinton&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Romney&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Obama&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;McCain&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Speech Phrase Filter by Candidate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Position]' derivation='None' name='[none:Position:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>12</min>
+            <max>27</max>
+          </filter>
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Position:ok]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Speech Word Filter by Candidate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Word]' role='dimension' type='nominal' />
+            <column-instance column='[word_length]' derivation='Max' name='[max:word_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Position]' derivation='None' name='[none:Position:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Word]' derivation='None' name='[none:Word:nk]' pivot='key' type='nominal' />
+            <column caption='Word Length' datatype='integer' name='[word_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:word_length:qk]' included-values='in-range'>
+            <min>5</min>
+            <max>18</max>
+          </filter>
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:word_length:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Word:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Position:ok]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases by Party'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Party]' role='dimension' type='nominal' />
+            <column-instance column='[phrase]' derivation='Count' name='[cnt:phrase:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Party]' derivation='None' name='[none:Party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>12</min>
+            <max>26</max>
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Party:nk]'>
+            <groupfilter function='member' level='[none:Party:nk]' member='&quot;Democrat&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' direction='DESC' using='[federated.16lcmkf0r2owis16m3elx0yf7hon].[cnt:phrase:qk]' />
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Party:nk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[cnt:phrase:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases in All Speeches'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column-instance column='[phrase]' derivation='Count' name='[cnt:phrase:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>12</min>
+            <max>26</max>
+          </filter>
+          <sort class='computed' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' direction='DESC' using='[federated.16lcmkf0r2owis16m3elx0yf7hon].[cnt:phrase:qk]' />
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[cnt:phrase:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases: Clinton(Text)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+            <column-instance column='[Position]' derivation='Avg' name='[avg:Position:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Avg' name='[avg:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[word_length]' derivation='Avg' name='[avg:word_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+            <column caption='Word Length' datatype='integer' name='[word_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>16</min>
+            <max>23</max>
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]'>
+            <groupfilter function='member' level='[none:Candidate:nk]' member='&quot;Clinton&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]'>
+            <groupfilter function='level-members' level='[none:phrase:nk]' user:ui-manual-selection='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' />
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:Position:qk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:word_length:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases: McCain (Text)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+            <column-instance column='[Position]' derivation='Avg' name='[avg:Position:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[word_length]' derivation='Avg' name='[avg:word_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Sum' name='[sum:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column caption='Word Length' datatype='integer' name='[word_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>22</min>
+            <max>27</max>
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]'>
+            <groupfilter function='member' level='[none:Candidate:nk]' member='&quot;McCain&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]'>
+            <groupfilter function='level-members' level='[none:phrase:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[sum:phrase_length:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[sum:phrase_length:qk]' />
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:Position:qk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:word_length:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases: Obama (Text)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+            <column-instance column='[phrase_length]' derivation='Avg' name='[avg:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[word_length]' derivation='Avg' name='[avg:word_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Position]' derivation='Avg' name='[pcto:avg:Position:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+            <column caption='Word Length' datatype='integer' name='[word_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>14</min>
+            <max>26</max>
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]'>
+            <groupfilter function='member' level='[none:Candidate:nk]' member='&quot;Obama&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]'>
+            <groupfilter expression='COUNT([phrase]) &gt; 1' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:phrase:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:word_length:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[pcto:avg:Position:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' palette='orange_blue_white_diverging_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' palette='orange_blue_white_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' />
+              <size column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' />
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='458' />
+                <format attr='maxheight' value='458' />
+                <format attr='minwidth' value='459' />
+                <format attr='maxwidth' value='459' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[pcto:avg:Position:qk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:word_length:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases: Romney (Text)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Position]' role='dimension' type='ordinal' />
+            <column-instance column='[Position]' derivation='Avg' name='[avg:Position:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[word_length]' derivation='Avg' name='[avg:word_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Sum' name='[sum:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column caption='Word Length' datatype='integer' name='[word_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>21</min>
+            <max>27</max>
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]'>
+            <groupfilter function='member' level='[none:Candidate:nk]' member='&quot;Romney&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]'>
+            <groupfilter function='level-members' level='[none:phrase:nk]' user:ui-manual-selection='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[sum:phrase_length:qk]' palette='red_blue_white_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[sum:phrase_length:qk]' />
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+              <lod column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:Position:qk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:word_length:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top Phrases: of all candidates (Bar)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (political_speeches)' name='federated.16lcmkf0r2owis16m3elx0yf7hon' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16lcmkf0r2owis16m3elx0yf7hon'>
+            <column datatype='string' name='[Candidate]' role='dimension' type='nominal' />
+            <column-instance column='[phrase]' derivation='Count' name='[cnt:phrase:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[phrase_length]' derivation='Max' name='[max:phrase_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Candidate]' derivation='None' name='[none:Candidate:nk]' pivot='key' type='nominal' />
+            <column-instance column='[phrase]' derivation='None' name='[none:phrase:nk]' pivot='key' type='nominal' />
+            <column caption='Phrase' datatype='string' name='[phrase]' role='dimension' type='nominal' />
+            <column caption='Phrase Length' datatype='integer' name='[phrase_length]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' included-values='in-range'>
+            <min>12</min>
+            <max>26</max>
+          </filter>
+          <filter class='categorical' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]'>
+            <groupfilter function='member' level='[none:Candidate:nk]' member='&quot;Obama&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' direction='DESC' using='[federated.16lcmkf0r2owis16m3elx0yf7hon].[cnt:phrase:qk]' />
+          <slices>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]</column>
+            <column>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' />
+              <text column='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</rows>
+        <cols>[federated.16lcmkf0r2owis16m3elx0yf7hon].[cnt:phrase:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Speech Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#fefaf1' />
+        </style-rule>
+        <style-rule element='story-point-caption'>
+          <format attr='background-color' value='#f28e2b' />
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='font-size' value='10' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='1' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='4668' id='3' type='title' w='100000' x='0' y='0' />
+            <zone h='11307' id='4' paired-zone-id='5' removable='false' type='flipboard-nav' w='100000' x='0' y='4668' />
+            <zone h='83610' id='5' paired-zone-id='4' removable='false' type='flipboard' w='100000' x='0' y='15975'>
+              <flipboard active-id='1' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Speech Word Filter by Candidate' captured-sheet='Speech Word Filter by Candidate' id='1' />
+                  <story-point caption='Speech Phrase Filter by Candidate' captured-sheet='Speech Phrase Filter by Candidate' id='2' />
+                  <story-point caption='Top Phrases by Party' captured-sheet='Top Phrases by Party' id='3' />
+                  <story-point caption='Top Phrases in All Speeches' captured-sheet='Top Phrases in All Speeches' id='4' />
+                  <story-point caption='Top Phrases: Obama (Bar)' captured-sheet='Top Phrases: of all candidates (Bar)' id='5'>
+                    <capturedDeltas>
+                      <worksheet name='Top Phrases: of all candidates (Bar)'>
+                        <highlight field='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]'>
+                          <color-one-way>
+                            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+                            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+                          </color-one-way>
+                          <bucket-selection>
+                            <bucket>&quot;Obama&quot;</bucket>
+                          </bucket-selection>
+                        </highlight>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Top Phrases: Obama (Text)' captured-sheet='Top Phrases: Obama (Text)' id='6' />
+                  <story-point caption='Top Phrases: Clinton (Text)' captured-sheet='Top Phrases: Clinton(Text)' id='7' />
+                  <story-point caption='Top Phrases: McClain (Text)' captured-sheet='Top Phrases: McCain (Text)' id='8' />
+                  <story-point caption='Top Phrases: Romney (Text)' captured-sheet='Top Phrases: Romney (Text)' id='9' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+    </window>
+    <window class='worksheet' hidden='true' name='Speech Phrase Filter by Candidate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Position:ok]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Word:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Speech Word Filter by Candidate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:word_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Position:ok]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Word:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases by Party'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Party:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases in All Speeches'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases: Clinton(Text)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='typeinlist' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' type='filter' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Position:ok]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases: McCain (Text)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' type='filter' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[sum:phrase_length:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases: Obama (Text)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' type='filter' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[avg:phrase_length:qk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Position:ok]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases: Romney (Text)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[sum:phrase_length:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Top Phrases: of all candidates (Bar)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' type='filter' />
+            <card param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[max:phrase_length:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:Candidate:nk]</field>
+            <field>[federated.16lcmkf0r2owis16m3elx0yf7hon].[none:phrase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+      e8//Bwy8dOc/GN1bAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
